@@ -25,23 +25,97 @@
     <h3>My favorite site</h3>
     <a href="https://www.laurea.fi">Visit Laurea</a>
 <table>
-    <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-    </tr>
-    <tr>
-        <td>Row 1, Cell 1</td>
-        <td>Row 1, Cell 2</td>
-    </tr>
-    <tr>
-        <td>Row 2, Cell 1</td>
-        <td>Row 2, Cell 2</td>
-    </tr>
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>My Courses</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f4f8;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #6c9bcf;
+            color: white;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #6c9bcf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>My Ongoing Courses</h2>
+
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <td>Programming</td>
+            <td>Not Started</td>
+        </tr>
     </table>
+
+    <br>
+
+    <h2>Contact Me</h2>
+
     <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <input type="submit" value="Submit">
     </form>
+
+</body>
+</html>
