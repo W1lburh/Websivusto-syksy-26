@@ -1,0 +1,156 @@
+
+/* General styles - WS02 */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f0f4f8;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+p {
+    color: blue;
+}
+
+/* WS02 Task 3: Div box padding and margin */
+.content-box {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* WS02 Task 4: Table formatting */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6c9bcf;
+    color: white;
+}
+
+/* WS02 Task 4: Form formatting */
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* WS03 Task 1: CSS Transitions */
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
+
+/* WS03 Task 2: CSS Animations */
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+/* WS03 Task 3: CSS Pseudo-classes */
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+
+.pseudo-list li {
+    padding: 10px;
+}
+
+/* WS03 Task 4: CSS Filters */
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+/* WS03 Task 5: CSS Pseudo-elements */
+.quote {
+    position: relative;
+    padding-left: 35px;
+    font-style: italic;
+}
+
+.quote::before {
+    content: '“';
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: lightgray;
+}
