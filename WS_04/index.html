@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ville</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Semantic website structure -->
+    <header>
+        <h1>Hey, I'm Ville. Nice to meet you!</h1>
+
+        <p>I am a geography enthusiast and I love exploring new places!</p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">My Hobbies</a></li>
+                <li><a href="#continents">Continents</a></li>
+                <li><a href="#courses">My Courses</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#layouts">CSS Layouts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="IMG_4562.JPG"
+                 alt="Here is a picture of me!"
+                 width="200"
+                 height="250">
+
+            <div class="content-box">
+                <h3>My Interests</h3>
+                <p>I enjoy geography, exploring new places, going to the gym, and playing disc golf.</p>
+            </div>
+
+            <h3>My Favorite Site</h3>
+            <a href="https://www.laurea.fi">Visit Laurea</a>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+
+            <ol>
+                <li>Geography</li>
+                <li>Gym</li>
+                <li>Disc Golf</li>
+            </ol>
+
+            <h2>My Favorite Animals</h2>
+
+            <ul>
+                <li>Platypus</li>
+                <li>Penguin</li>
+                <li>Dolphin</li>
+            </ul>
+        </section>
+
+        <section id="continents">
+            <h2>Top 4 Continents</h2>
+
+            <ul class="pseudo-list">
+                <li>Antarctica</li>
+                <li>Europe</li>
+                <li>Oceania</li>
+                <li>Asia</li>
+            </ul>
+        </section>
+
+        <section id="courses">
+            <h2>My Ongoing Courses</h2>
+
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Ongoing</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>Programming</td>
+                    <td>Not Started</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="transitions">
+            <h2>Button Hover Effect</h2>
+
+            <button class="transition-button" type="button">
+                Hover me
+            </button>
+        </section>
+
+        <section id="animation">
+            <h2>Moving Animation</h2>
+
+            <div class="animation-box"></div>
+        </section>
+
+        <section id="image-filter">
+            <h2>Image Color Filter</h2>
+
+            <p>Hover over the image to see its original colors.</p>
+
+            <img src="IMG_4562.JPG"
+                 alt="My photo with a grayscale filter"
+                 width="200"
+                 class="filter-image">
+        </section>
+
+        <section id="quote">
+            <h2>Geography Quote</h2>
+
+            <blockquote class="quote">
+                Exploring new places helps us understand the world better.
+            </blockquote>
+        </section>
+
+        <!-- CSS Grid -->
+        <section id="layouts">
+            <h2>CSS Grid Layout</h2>
+
+            <p>This grid contains three columns and two rows.</p>
+
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+        </section>
+
+        <!-- Flexbox -->
+        <section id="flexbox">
+            <h2>Flexbox Layout</h2>
+
+            <div class="flex-container">
+                <div class="box">Geography</div>
+                <div class="box">Gym</div>
+                <div class="box">Disc Golf</div>
+            </div>
+        </section>
+
+        <!-- Responsive design -->
+        <section id="responsive">
+            <h2>Responsive Design</h2>
+
+            <div class="responsive-box">
+                Resize the browser window to see the background change.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ville. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
