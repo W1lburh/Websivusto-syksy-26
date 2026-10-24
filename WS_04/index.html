@@ -3,27 +3,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ville's World - Geography and Adventures</title>
-
+    <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Welcome to My World!</h1>
-        <p>Discover my interests, favorite places, and love for geography.</p>
+        <h1>Hey, I'm Ville. Nice to meet you!</h1>
+
+        <p>I am a geography enthusiast and I love exploring new places!</p>
 
         <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#hobbies">My Hobbies</a></li>
-                <li><a href="#continents">Continents</a></li>
-                <li><a href="#courses">My Studies</a></li>
-                <li><a href="#places">Places to Explore</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#about">About Me</a> |
+            <a href="#hobbies">My Hobbies</a> |
+            <a href="#continents">My Favorite Continents</a> |
+            <a href="#courses">My Courses</a> |
+            <a href="#contact">Contact Me</a>
         </nav>
     </header>
 
@@ -33,47 +29,27 @@
             <h2>About Me</h2>
 
             <img src="IMG_4562.JPG"
-                 alt="A picture of me"
+                 alt="Here is a picture of me!"
                  width="200"
                  height="250">
 
-            <div class="content-box">
-                <h3>A Little About Myself</h3>
-                <p>
-                    Hey, I'm Ville. Nice to meet you!
-                    I'm a geography enthusiast who loves exploring
-                    new places and learning about the world.
-                </p>
-            </div>
+            <p>I am a geography enthusiast and I love exploring new places!</p>
 
-            <h3>My Favorite Website</h3>
-            <p>
-                Visit <a href="https://www.laurea.fi">Laurea University of Applied Sciences</a>
-                to learn more about my school.
-            </p>
+            <h3>My Favorite Site</h3>
+            <a href="https://www.laurea.fi">Visit Laurea</a>
         </section>
 
         <section id="hobbies">
-            <h2>Things I Enjoy Doing</h2>
+            <h2>My Hobbies</h2>
 
-            <div class="flex-container">
-                <div class="box">
-                    <h3>Geography</h3>
-                    <p>Discovering countries, landscapes, and cultures.</p>
-                </div>
+            <ul>
+                <li>Geography</li>
+                <li>Gym</li>
+                <li>Disc Golf</li>
+            </ul>
 
-                <div class="box">
-                    <h3>Gym</h3>
-                    <p>Staying active and working towards my fitness goals.</p>
-                </div>
+            <h2>My Favorite Animals</h2>
 
-                <div class="box">
-                    <h3>Disc Golf</h3>
-                    <p>Enjoying the outdoors and challenging myself.</p>
-                </div>
-            </div>
-
-            <h3>Animals I Find Interesting</h3>
             <ul>
                 <li>Platypus</li>
                 <li>Penguin</li>
@@ -82,13 +58,7 @@
         </section>
 
         <section id="continents">
-            <h2>Continents Around the World</h2>
-
-            <p>
-                Our planet is full of fascinating landscapes,
-                wildlife, and cultures. These are four continents
-                I'd like to feature on my geography page.
-            </p>
+            <h2>My Favorite Continents</h2>
 
             <ul class="pseudo-list">
                 <li>Antarctica</li>
@@ -99,12 +69,7 @@
         </section>
 
         <section id="courses">
-            <h2>What I'm Learning</h2>
-
-            <p>
-                I'm developing my skills in web development
-                and learning how to build websites.
-            </p>
+            <h2>My Ongoing Courses</h2>
 
             <table>
                 <tr>
@@ -126,112 +91,78 @@
             </table>
         </section>
 
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
         <section id="places">
-            <h2>Discover the World</h2>
+            <h2>Exploring New Places</h2>
 
-            <p>
-                Every place has its own history, natural features,
-                and unique culture. Exploring the world helps us
-                understand how people and environments are connected.
-            </p>
-
-            <h3>Explore New Horizons</h3>
+            <p>I love exploring new places and learning about the world!</p>
 
             <button class="transition-button" type="button">
-                Adventure Awaits!
+                Explore!
             </button>
 
-            <div class="animation-box"></div>
+            <h3>My Favorite Places</h3>
 
-            <p>
-                Just like travelling across a map, there is always
-                somewhere new to discover.
-            </p>
+            <div class="grid-container">
+                <div class="grid-item">Antarctica</div>
+                <div class="grid-item">Europe</div>
+                <div class="grid-item">Oceania</div>
+                <div class="grid-item">Asia</div>
+                <div class="grid-item">Africa</div>
+                <div class="grid-item">South America</div>
+            </div>
 
-            <h3>Seeing the World in Different Ways</h3>
+            <h3>Things I Like to Do</h3>
 
-            <p>
-                Landscapes can look completely different depending
-                on how we see them. Hover over the photograph to
-                bring its colors back.
-            </p>
+            <div class="flex-container">
+                <div class="box">Geography</div>
+                <div class="box">Gym</div>
+                <div class="box">Disc Golf</div>
+            </div>
+
+            <h3>My Picture</h3>
+
+            <p>Move your mouse over the picture!</p>
 
             <img src="IMG_4562.JPG"
-                 alt="A photograph showing the world in color"
+                 alt="Here is a picture of me!"
                  width="200"
                  class="filter-image">
 
+            <h3>My Favorite Quote</h3>
+
             <blockquote class="quote">
-                The world is a book, and those who do not travel
-                read only one page.
+                Exploring new places is a great way to learn about the world.
             </blockquote>
-        </section>
 
-        <section id="world-regions">
-            <h2>Explore Different Regions</h2>
+            <h3>Moving Box</h3>
 
-            <p>
-                The world has a huge variety of environments,
-                from icy polar regions to tropical islands
-                and vast mountain ranges.
-            </p>
+            <div class="animation-box"></div>
 
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h3>Polar Regions</h3>
-                    <p>Ice, glaciers, and extreme climates.</p>
-                </div>
+            <h3>Different Screen Sizes</h3>
 
-                <div class="grid-item">
-                    <h3>Europe</h3>
-                    <p>Diverse landscapes and rich history.</p>
-                </div>
-
-                <div class="grid-item">
-                    <h3>Asia</h3>
-                    <p>High mountains and vast landscapes.</p>
-                </div>
-
-                <div class="grid-item">
-                    <h3>Africa</h3>
-                    <p>Deserts, savannas, and rainforests.</p>
-                </div>
-
-                <div class="grid-item">
-                    <h3>Oceania</h3>
-                    <p>Islands, reefs, and unique wildlife.</p>
-                </div>
-
-                <div class="grid-item">
-                    <h3>South America</h3>
-                    <p>The Andes and the Amazon rainforest.</p>
-                </div>
+            <div class="responsive-box">
+                Resize the window to see the effect.
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>Get in Touch</h2>
-
-            <p>
-                Have similar interests or a favorite place
-                you'd recommend exploring? Feel free to get in touch.
-            </p>
-
-            <form>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <input type="submit" value="Send Message">
-            </form>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Ville's World | Geography, Travel, and Discovery</p>
+        <p>My Website - Ville - 2026</p>
     </footer>
 
 </body>
