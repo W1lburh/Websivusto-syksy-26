@@ -407,3 +407,6 @@ footer {
 #workshop6 .alert {
     max-width: 600px;
 }
+body {
+    background-color: red !important;
+}
