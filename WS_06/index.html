@@ -1,8 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -177,23 +183,23 @@
     </section>
 
     <!-- WS05: Task 1 - Responsive Layout -->
-<section id="responsive-layout">
-    <h2>Responsive Layout</h2>
+    <section id="responsive-layout">
+        <h2>Responsive Layout</h2>
 
-    <div class="responsive-container">
+        <div class="responsive-container">
 
-        <div class="column">
-            <h3>My Interest in Geography</h3>
-            <p>I enjoy learning about different countries, continents, cultures and geographical features around the world.</p>
+            <div class="column">
+                <h3>My Interest in Geography</h3>
+                <p>I enjoy learning about different countries, continents, cultures and geographical features around the world.</p>
+            </div>
+
+            <div class="column">
+                <h3>My Favorite Thing About Traveling</h3>
+                <p>Traveling allows me to discover new places, experience different cultures and learn more about our world.</p>
+            </div>
+
         </div>
-
-        <div class="column">
-            <h3>My Favorite Thing About Traveling</h3>
-            <p>Traveling allows me to discover new places, experience different cultures and learn more about our world.</p>
-        </div>
-
-    </div>
-</section>
+    </section>
 
     <!-- WS05: Task 2 - Responsive Image -->
     <section id="responsive-image">
@@ -228,10 +234,109 @@
         </nav>
     </section>
 
+    <!-- WS06: Bootstrap -->
+    <section id="workshop6">
+        <h2>Workshop 6: Bootstrap</h2>
+
+        <!-- Task 1: Bootstrap Responsive Navbar -->
+        <h3>Bootstrap Navigation Bar</h3>
+
+        <nav class="navbar navbar-expand-lg ws6-navbar">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#workshop6">My Website</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#workshop6Navbar"
+                        aria-controls="workshop6Navbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="workshop6Navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbies">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Task 2: Bootstrap Grid -->
+        <h3>My Favorite Places</h3>
+
+        <div class="row g-3 ws6-grid">
+            <div class="col-12 col-md-4">
+                <div class="grid-item">Italy</div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="grid-item">Japan</div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="grid-item">New Zealand</div>
+            </div>
+        </div>
+
+        <!-- Task 3: Bootstrap Buttons -->
+        <h3>Bootstrap Buttons</h3>
+
+        <div class="ws6-buttons">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+        </div>
+
+        <!-- Task 4: Bootstrap Card -->
+        <h3>Bootstrap Card</h3>
+
+        <div class="card ws6-card">
+            <img src="IMG_4562.JPG"
+                 class="card-img-top"
+                 alt="A picture of me">
+
+            <div class="card-body">
+                <h5 class="card-title">My Interest in Geography</h5>
+
+                <p class="card-text">
+                    I enjoy exploring different countries, learning about cultures
+                    and discovering interesting places around the world.
+                </p>
+
+                <a href="https://www.laurea.fi" class="card-link">
+                    Visit Laurea
+                </a>
+            </div>
+        </div>
+
+        <!-- Task 5: Bootstrap Alert -->
+        <h3>Bootstrap Alert</h3>
+
+        <div class="alert alert-warning" role="alert">
+            Welcome to my website! Thanks for visiting.
+        </div>
+
+    </section>
+
 </main>
 
 <footer>
     <p>My Website - Ville - 2026</p>
 </footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
