@@ -1,359 +1,13 @@
 
-
-body {
-    font-family: Arial, sans-serif;
-    padding: 30px;
-    background-color: #f0f4f8;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    color: #2c3e50;
-}
-
-p {
-    color: blue;
-}
-
-
-
-.content-box {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #6c9bcf;
-    color: white;
-}
-
-
-
-form {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-}
-
-label {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-input[type="text"],
-input[type="email"] {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-
-
-.transition-button {
-    background-color: lightblue;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.transition-button:hover {
-    background-color: lightcoral;
-}
-
-
-
-.animation-box {
-    width: 50px;
-    height: 50px;
-    background-color: lightgreen;
-    position: relative;
-    animation: move 2s infinite alternate;
-}
-
-@keyframes move {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: 100px;
-    }
-}
-
-
-
-.pseudo-list li:nth-child(odd) {
-    background-color: lightgray;
-}
-
-.pseudo-list li:nth-child(even) {
-    background-color: white;
-}
-
-.pseudo-list li {
-    padding: 10px;
-}
-
-
-
-.filter-image {
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.filter-image:hover {
-    filter: grayscale(0%);
-}
-
-
-
-.quote {
-    position: relative;
-    padding-left: 35px;
-    font-style: italic;
-}
-
-.quote::before {
-    content: "“";
-    font-size: 40px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: lightgray;
-}
-
-
-/* Semantic navigation */
-
-header {
-    background-color: #e3edf7;
-    padding: 20px;
-    border-radius: 6px;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-}
-
-nav a {
-    color: #2c3e50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-
-/* Page sections */
-
-main section {
-    margin: 30px 0;
-}
-
-
-/* CSS Grid Layout */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.grid-item {
-    background-color: lightgreen;
-    padding: 20px;
-    text-align: center;
-    border-radius: 4px;
-}
-
-
-/* Flexbox Layout */
-
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-}
-
-.box {
-    background-color: lightblue;
-    padding: 20px;
-    text-align: center;
-    flex: 1;
-    border-radius: 4px;
-}
-
-
-/* Responsive Design */
-
-.responsive-box {
-    padding: 20px;
-    text-align: center;
-    border-radius: 4px;
-}
-
-@media (max-width: 600px) {
-
-    .responsive-box {
-        background-color: lightcoral;
-    }
-
-    .flex-container {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    body {
-        padding: 15px;
-    }
-}
-
-@media (min-width: 601px) {
-
-    .responsive-box {
-        background-color: lightseagreen;
-    }
-}
-
-
-
-.responsive-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-}
-
-@media (max-width: 600px) {
-
-    .column {
-        flex: 100%;
-    }
-}
-
-
-
-.responsive-image {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-.media-query-box {
-    padding: 20px;
-    text-align: center;
-}
-
-@media (max-width: 600px) {
-
-    .media-query-box {
-        background-color: lightcoral;
-    }
-}
-
-@media (min-width: 601px) {
-
-    .media-query-box {
-        background-color: lightblue;
-    }
-}
-
-
-
-.responsive-nav .nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.responsive-nav .menu-toggle {
-    display: none;
-}
-
-@media (max-width: 600px) {
-
-    .responsive-nav .nav-list {
-        display: none;
-    }
-
-    .responsive-nav .menu-toggle {
-        display: block;
-    }
-}
-
-
-/* Footer */
-
-footer {
-    margin-top: 40px;
-    padding: 15px;
-    text-align: center;
-    background-color: #e3edf7;
-    border-radius: 6px;
-}
-
-
+/* ================================= */
+/* WS06: Bootstrap Workshop          */
+/* ================================= */
 
 #bootstrap-workshop {
-    background-color: #ffffff;
-    padding: 25px;
+    background-color: #e3edf7;
+    padding: 20px;
+    border-radius: 6px;
     margin-top: 30px;
-    border-radius: 8px;
 }
 
 /* Bootstrap headings */
@@ -364,59 +18,82 @@ footer {
     margin-bottom: 15px;
 }
 
-
-#bootstrap-workshop .bootstrap-navbar {
-    border-radius: 6px;
-    padding: 15px;
-    margin-bottom: 25px;
+#bootstrap-workshop p {
+    color: blue;
 }
 
+
+/* Task 1: Responsive Navbar */
+
+#bootstrap-workshop .bootstrap-navbar {
+    background-color: #d5e3f1;
+    padding: 12px;
+    border: 1px solid #c5d5e5;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+#bootstrap-workshop .bootstrap-navbar .navbar-brand {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+#bootstrap-workshop .bootstrap-navbar .nav-link {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+#bootstrap-workshop .bootstrap-navbar .nav-link:hover {
+    text-decoration: underline;
+}
 
 #bootstrap-workshop .bootstrap-navbar ul {
     display: block;
     gap: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
 }
 
-#bootstrap-workshop .bootstrap-navbar a {
-    font-weight: normal;
-    text-decoration: none;
-}
 
-#bootstrap-workshop .bootstrap-navbar .navbar-brand {
-    font-weight: bold;
-}
-
+/* Task 2: Bootstrap Grid */
 
 #bootstrap-workshop .bootstrap-grid {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #bootstrap-workshop .bootstrap-column {
-    background-color: #e3edf7;
+    background-color: lightgreen;
     padding: 20px;
     margin-bottom: 10px;
-    border-radius: 6px;
     text-align: center;
+    border-radius: 4px;
+    border: 1px solid #c5d5c5;
 }
 
-#bootstrap-workshop .bootstrap-column p {
+#bootstrap-workshop .bootstrap-column h4 {
     color: #2c3e50;
 }
 
-
-#bootstrap-workshop .bootstrap-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
+#bootstrap-workshop .bootstrap-column p {
+    color: blue;
+    margin-bottom: 0;
 }
 
 
+/* Task 3: Bootstrap Buttons */
+
+#bootstrap-workshop .btn {
+    margin: 5px 5px 5px 0;
+}
+
+
+/* Task 4: Bootstrap Card */
+
 #bootstrap-workshop .bootstrap-card {
     width: 18rem;
-    margin-bottom: 25px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 10px;
 }
 
 #bootstrap-workshop .bootstrap-card img {
@@ -424,11 +101,24 @@ footer {
     height: auto;
 }
 
+#bootstrap-workshop .bootstrap-card .card-title {
+    color: #2c3e50;
+}
+
+#bootstrap-workshop .bootstrap-card .card-text {
+    color: blue;
+}
+
+
+/* Task 5: Bootstrap Alerts */
 
 #bootstrap-workshop .alert {
+    border-radius: 6px;
     margin-top: 10px;
 }
 
+
+/* Responsive Design */
 
 @media (max-width: 600px) {
 
